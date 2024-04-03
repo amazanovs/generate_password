@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Password generator</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">Type number of symbols min 4, max 16</div>
+            <div class="element">
+                <input type="number" name="length" id='length' value="8">
+            </div>
+            <div class="element">
+                <input type="checkbox" name="isNumbers" id='isNumbers'>
+                <span>Numbers</span>
+            </div>
+            <div class="element">
+                <input type="checkbox" name="isBigLetters" id='isBigLetters'>
+                <span>Big letters</span>
+            </div>
+            <div class="element">
+                <input type="checkbox" name="isSmallLetters" id='isSmallLetters'>
+                <span>Small letters</span>
+            </div>
+
+            <div class="element">
+                <button name="send" id='send'>Generate</button>
+            </div>
+
+            <div class="output" id="output">&nbsp;</div>
+        </div>
+    </body>
+    <script src="/js/main.js"></script>
+</html>

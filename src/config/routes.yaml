@@ -1,0 +1,5 @@
+password_service:
+    resource:
+        path: ../src/PasswordGeneratorService/
+        namespace: App\PasswordGeneratorService
+    type: attribute

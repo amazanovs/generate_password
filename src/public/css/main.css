@@ -1,0 +1,48 @@
+.main{
+    margin: auto;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid silver;
+    background: #f7f7f9;
+}
+
+.header {
+    color: #2e3136;
+    text-align: center;
+}
+
+.element {
+    text-align: center;
+    margin: 7px 0 7px 0;
+}
+
+.output {
+    text-align: center;
+    margin: 7px 0 7px 0;
+    font-size: 22px;
+    padding:20px;
+    border: 1px solid #cc2255;
+    color: #cc2255;
+    background: #fff;
+}
+
+
+.element > input {
+    text-align: center;
+    cursor: pointer;
+}
+
+.element > button {
+    background: #1b9448;
+    color: #fff;
+    border: 0;
+    font-size:22px;
+    padding: 7px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.element > button:hover {
+    background: #cc2255;
+    color: #fff;
+}
