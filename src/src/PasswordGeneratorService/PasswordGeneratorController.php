@@ -28,11 +28,23 @@ class PasswordGeneratorController extends AbstractController
     public function webFlow(#[MapRequestPayload] SettingModel $setting): JsonResponse
     {
         if ($this->settingValidator->validate($setting)) {
-            $message = $this->generatePasswordAction->run($setting);
+            $message = $this->runFlow($setting);
         } else {
             $message = $this->settingValidator->getMessage();
         }
 
         return $this->json(['password' => $message]);
+    }
+
+    public function consoleFlow(int $length): string
+    {
+        $setting = new SettingModel(length: $length);
+
+        return $this->runFlow($setting);
+    }
+
+    private function runFlow(SettingModel $setting): string
+    {
+        return $this->generatePasswordAction->run($setting);
     }
 }
