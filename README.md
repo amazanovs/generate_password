@@ -4,3 +4,4 @@
 3. You are ready for use. Go to http://localhost:55557 enjoy.
 4. Console uses, example: docker exec mazanovs-php /application/bin/console generate:password 16
 ![image](main.png)
+![image](console.png)
